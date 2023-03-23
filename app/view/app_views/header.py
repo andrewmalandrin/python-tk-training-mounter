@@ -10,5 +10,5 @@ class AppHeader(Frame):
         self.grid_columnconfigure(0, weight=1)
         self.grid_rowconfigure(0, weight=1)
 
-        title_label = Label(self, text=title, bg='#112', fg='#88F', font=('Arial', 25))
+        title_label = Label(self, text=title, bg='#112', fg='#88F', font=('Arial Black', 25))
         title_label.grid(row=0, column=0, sticky='wens')

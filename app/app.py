@@ -16,10 +16,10 @@ class TkinterApp(Tk):
     def __init__(self):
         super().__init__()
         
-        title = "Training Mounter"
+        _title = "Training Mounter"
 
         # App Settings
-        self.title(title)
+        self.title(_title)
         self.geometry('1024x768')
         self.resizable(False, False)
         self.iconphoto(False, PhotoImage(file="app/assets/title_icon.png"))
@@ -36,7 +36,7 @@ class TkinterApp(Tk):
         container.grid_rowconfigure(2, weight=1)
         container.grid_columnconfigure(0, weight=1)
 
-        header = AppHeader(container, title)
+        header = AppHeader(container, _title)
         
         content = AppContent(container)
         
